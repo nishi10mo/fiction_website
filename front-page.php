@@ -5,7 +5,7 @@
     <div class="campaign carouselWindow">
       <h1 class="campaign-title">CAMPAIGN</h1>
       <p class="campaign-catch">今ならなんと<span>50</span>%off</p>
-      <a href="<?php echo home_url("campaign"); ?>" class="campaign-detailBtn">詳細を見る</a>
+      <a href="<?php echo home_url(); ?>" class="campaign-detailBtn">詳細を見る</a>
     </div>
     <div class="appealPhrase carouselWindow">
       <p class="appealPhrase-p">
@@ -26,7 +26,7 @@
 </section>
 
 <section class="layoutServiceArea">
-  <h1 class="service-title">SERVICE</h1>
+  <h1 class="service-title" id="service">SERVICE</h1>
   <div class="serviceItems">
     <div class="serviceItem firstServiceItem">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service1.jpeg" alt="Webサイト" class="serviceItem-img">
@@ -34,7 +34,7 @@
         <p class="serviceItem-p">
           完全オリジナルのホームページを制作いたします。<br>スマートフォン対応サイト化やWordPress化、お任せください。<br>その他、どんな細かなリニューアルでも対応いたします。
         </p>
-        <a href="<?php echo home_url("service"); ?>" class="serviceItem-detailBtn">詳細を見る</a>
+        <a href="<?php echo home_url(); ?>" class="serviceItem-detailBtn">詳細を見る</a>
     </div>
     <div class="serviceItem">
         <img src="<?php echo get_template_directory_uri(); ?>/img/service2.jpeg" alt="コーディング" class="serviceItem-img">
@@ -42,13 +42,13 @@
         <p class="serviceItem-p">
           デザインカンプからのコーディング、お任せください。<br>JavaScript（jQuery）、WordPressを用いる案件も対応可です。<br>Sassを用いて、BEMでコーディングさせていただきます。
         </p>
-        <a href="<?php echo home_url("service"); ?>" class="serviceItem-detailBtn">詳細を見る</a>
+        <a href="<?php echo home_url(); ?>" class="serviceItem-detailBtn">詳細を見る</a>
     </div>
   </div>
 </section>
 
 <section class="layoutNewsArea">
-  <h1 class="news-h1">NEWS</h1>
+  <h1 class="news-h1" id="news">NEWS</h1>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <a href="<?php the_permalink(); ?>" class="news-item">
     <?php echo get_the_date(); ?>
@@ -62,7 +62,7 @@
 </section>
 
 <section class="layoutContactArea">
-  <h1 class="contact-h1">
+  <h1 class="contact-h1" id="contact">
     CONTACT
   </h1>
   <?php #echo do_shortcode('[contact-form-7 id="7" title="Tomapool"]'); ?>

@@ -34,9 +34,12 @@
     </a>
     <ul class="header-containerCenter">
       <li class="header-menuItem"><a href="<?php echo home_url(); ?>">TOP</a></li>
-      <li class="header-menuItem"><a href="<?php echo home_url("service"); ?>">SERVICE</a></li>
-      <li class="header-menuItem"><a href="<?php echo home_url("contact"); ?>">CONTACT</a></li>
-      <li class="header-menuItem"><a href="<?php echo home_url("news"); ?>">NEWS</a></li>
+      <!-- <li class="header-menuItem"><a href="<?php #echo home_url("service"); ?>">SERVICE</a></li> -->
+      <li class="header-menuItem"><a href="#service">SERVICE</a></li>
+      <!-- <li class="header-menuItem"><a href="<?php #echo home_url("contact"); ?>">CONTACT</a></li> -->
+      <li class="header-menuItem"><a href="#contact">CONTACT</a></li>
+      <!-- <li class="header-menuItem"><a href="<?php #echo home_url("news"); ?>">NEWS</a></li> -->
+      <li class="header-menuItem"><a href="#news">NEWS</a></li>
     </ul>
     <div class="header-containerRight">
       <p class="header-tel"><span>tel.</span>090-xxxx-xxxx</p>
