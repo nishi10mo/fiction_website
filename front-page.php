@@ -65,7 +65,8 @@
   <h1 class="contact-h1">
     CONTACT
   </h1>
-  <?php echo do_shortcode('[contact-form-7 id="7" title="Tomapool"]'); ?>
+  <?php #echo do_shortcode('[contact-form-7 id="7" title="Tomapool"]'); ?>
+  <?php echo do_shortcode('[contact-form-7 id="ce2cec6" title="コンタクトフォーム 1"]'); ?>
   <!-- <div class="contact-wrapper">
     <p class="contact-p contact-firstP">
       お名前<span>必須</span>
