@@ -1,6 +1,6 @@
 <footer class="layoutFooterArea">
   <p class="footer-tel">
-    <span>tel.</span>070-8946-0676
+    <span>tel.</span>090-xxxx-xxxx
   </p>
   <h1 class="footer-logo">Tomapool</h1>
 </footer>

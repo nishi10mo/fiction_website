@@ -39,7 +39,7 @@
       <li class="header-menuItem"><a href="<?php echo home_url("news"); ?>">NEWS</a></li>
     </ul>
     <div class="header-containerRight">
-      <p class="header-tel"><span>tel.</span>070-8946-0676</p>
+      <p class="header-tel"><span>tel.</span>090-xxxx-xxxx</p>
       <div class="header-hamburger" id="hamburger"><i class="bi bi-list"></i></div>
     </div>
   </div>
