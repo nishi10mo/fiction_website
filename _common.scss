@@ -1,0 +1,129 @@
+/* 変数 */
+$header-text-color: rgb(255,255,255);
+$headerfooter-bgcolor: rgb(234,0,41);
+$logo-font: 'Quintessential', cursive;
+$logoSub--font: 'Klee One', cursive;
+$service-bgcolor: rgb(239,239,239);
+
+/* common */
+html {
+  letter-spacing: 0.1em;
+  line-height: 1.15;
+  color: rgb(0,0,0);
+}
+
+/* header */
+.layoutHeaderArea {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  height: 75px;
+  background-color: 
+  $headerfooter-bgcolor;
+  .header-containerAll {
+    width: 97%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $header-text-color;
+    .header-containerLeft {
+      .header-mainTitle {
+        font-family: $logo-font;
+        font-size: 24px;
+        letter-spacing: 0.15em;
+      }
+      .header-subTitle {
+        font-family: $logoSub--font;
+        font-size: 12px;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 3px;
+      }
+    }
+    .header-containerCenter {
+      display: none;
+    }
+    .header-containerRight {
+      display: flex;
+      align-items: center;
+      .header-tel {
+        font-size: 16px;
+        font-weight: 400;
+        margin-right: 5px;
+        span {
+          font-size: 12px;
+        }
+      }
+      .header-hamburger {
+        font-size: 35px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* menu_sp */
+.layoutMenuArea {
+  z-index: 100;
+  background-color: rgba(0,0,0,.9);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .3s;
+  &.appear {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .nav-closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .nav-menuItem {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    a:hover {
+      opacity: .8;
+    }
+    &Top {
+      margin-top: 120px;
+    }
+  }
+}
+
+/* footer */
+.layoutFooterArea {
+  background-color: $headerfooter-bgcolor;
+  color: rgb(255,255,255);
+  overflow: hidden;
+  .footer-tel {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    span {
+      font-size: 16px;
+    }
+  }
+  .footer-logo {
+    font-family: $logo-font;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}

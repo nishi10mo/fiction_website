@@ -1,0 +1,213 @@
+/* header */
+.layoutHeaderArea {
+  height: 85px;
+  .header-containerAll {
+    max-width: 1200px;
+    a.header-containerLeft {
+      h1.header-mainTitle {
+        font-size: 30px;
+      }
+      h2.header-subTitle {
+        font-size: 16px;
+      }
+    }
+    ul.header-containerCenter {
+      font-weight: 400;
+      display: flex;
+      li.header-menuItem {
+        font-size: 16px;
+        a:hover {
+          opacity: .8;
+          text-decoration: underline;
+        }
+        & + li.header-menuItem {
+          margin-left: 30px;
+        }
+      }
+    }
+    .header-containerRight {
+      p.header-tel {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .header-hamburger {
+        display: none;
+      }
+    }
+  }
+}
+
+/* start front-page */
+.layoutCarouselArea {
+  height: 350px;
+  .carouselWindows {
+    height: 300px;
+    .campaign {
+      &-title {
+        font-size: 30px;
+      }
+      &-catch {
+        font-size: 20px;
+        margin-top: 40px;
+        span {
+          font-size: 28px;
+        }
+      }
+      &-detailBtn {
+        font-size: 16px;
+        width: 200px;
+        line-height: 45px;
+        margin-top: 50px;
+      }
+    }
+    .appealPhrase {
+      &-p {
+        font-size: 20px;
+        line-height: 2.5em;
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+    .catchPhrase {
+      &-p {
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 4.5em;
+        span {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  .carouselWindow-slideBtns {
+    // margin-top: 25px;
+    .carouselWindow-slideBtn {
+      width: 15px;
+      height: 15px;
+      & + .carouselWindow-slideBtn {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.layoutServiceArea {
+  .service-title {
+    font-size: 30px;
+  }
+  .serviceItem {
+    &-img {
+      height: 250px;
+    }
+    &-h1 {
+      font-size: 20px;
+    }
+    &-p {
+      font-size: 18px;
+    }
+  }
+}
+
+.layoutNewsArea {
+  .news-h1 {
+    font-size: 30px;
+  }
+  .news-item {
+    font-size: 16px;
+    .news-title {
+      font-size: 20px;
+    }
+  }
+  .news-detailBtn {
+    font-size: 16px;
+    font-weight: 525;
+    border: 1px solid rgb(0,0,0);
+  }
+}
+
+.layoutContactArea {
+  .contact-h1 {
+    font-size: 30px;
+  }
+  .contact-wrapper {
+    .contact-p {
+      font-size: 18px;
+    }
+    .contact-textbox {
+      font-size: 18px;
+    }
+    .contact-textarea {
+      font-size: 18px;
+    }
+    .contact-submitWrapper {
+      .contact-submit {
+        width: 150px;
+        line-height: 35px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+/* end front-page */
+
+/* start page-service */
+.layoutServiceMainArea {
+  .service-title {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+  .serviceItem {
+    &-img {
+      margin-top: 60px;
+      height: 250px;
+    }
+    &-h1 {
+      font-size: 20px;
+      margin-top: 60px;
+    }
+    &-p {
+      font-size: 18px;
+      margin-top: 45px;
+      margin-bottom: 100px;
+    }
+  }
+}
+/* end page-service */
+
+/* start page-campaing */
+.layoutCampaingMainArea {
+  .campaing-h1 {
+    font-size: 24px;
+  }
+  .campaing-content {
+    font-size: 20px;
+    .campaing-pRed {
+      font-size: 28px;
+    }
+  }
+}
+
+/* start single-post */
+// .layoutNewsMainArea {
+//   .news-wrapper {
+//     .news-thumbnail {
+//       max-width: 500px;
+//     }
+//   }
+// }
+/* end single-post */
+
+/* start archive-post */
+.layoutNewsArchiveArea {
+  .news-h1 {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+  .news-wrapper {
+    .news-item {
+      width: 32%;
+    }
+  }
+}
+/* end archive-post */

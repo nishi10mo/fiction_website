@@ -1,0 +1,11 @@
+@import "common";
+
+@import "sp";
+
+@media (min-width: 768px) {
+  @import "tablet";
+}
+
+@media (min-width: 1366px) {
+  @import "pc";
+}
